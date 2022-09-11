@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This website is a challenge of the discord community, the Codelandia community propose this challenge what is Jordan store showing the sneakers. This website is make utilizing a HTML, CSS and JS with some library's and totally responsive utilizing a FlexBox.">
+  <meta name=”robots” content=”index, follow”>
+  <meta name="keywords" content="jordan, shoes, code, codelandia, html, css, js, landing, page, landing page, sneakers, moda, shoes, nike">
+  <meta name="author" content="Lucas Mesquita">
+  <title>Jordan Shoes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+  <section class="desc">
+    <p>Ganhe R$ 10,00 de desconto no frete</p>
+  </section>
+
+  <section class="title">
+    <h1>Jordan Shoes</h1>
+  </section>
+
+  <section class="home-bg">
+    <section class="home">
+      <h1>A melhor loja de Jordan</h1>
+      <p id="typed"></p>
+      <div id="typed-strings">
+        <p>O tênis Jordan é fruto de uma velha e forte <br> parceria entre a Nike e o jogador Michael Jordan.</p>
+      </div>
+    </section>
+  </section>
+
+  <main>
+    <h1>Destaques</h1>
+    <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado</p>
+
+    <section>
+     <ul class="shoes">
+      <li class="shoes-item"><img src="img/1.png" alt="First sneaker with colors green, white and pink"></li>
+      <li class="shoes-item"><img src="img/2.png" alt="Second sneaker with colors purple, white and green"></li>
+      <li class="shoes-item"><img src="img/3.png" alt="Third sneaker with colors white and purple"></li>
+      <li class="shoes-item"><img src="img/4.png" alt="Fourthy sneaker with colors grey, white and black"></li>
+      <li class="shoes-item"><img src="img/5.png" alt="Fifth sneaker with colors black, wine color and white"></li>
+      <li class="shoes-item"><img src="img/6.png" alt="Sixth sneaker with colors orange and white"></li>
+      <li class="shoes-item"><img src="img/7.png" alt=" sneaker with colors grey and white"></li>
+      <li class="shoes-item"><img src="img/8.png" alt="Eighth sneaker with colors black and white"></li>
+     </ul>
+    </section>
+  </main>
+
+  <footer><p>Todos os direitos reservado.</p></footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 40
+    });
+  </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 2000,
+        reset: true
+    });
+
+    ScrollReveal().reveal('main', { delay: 600 });
+    ScrollReveal().reveal('.shoes', { delay: 650 });
+</script>
+</body>
+</html>
